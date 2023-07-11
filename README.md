@@ -18,12 +18,12 @@ $ php artisan make:repository Company/Apply
 
 
 ┌── `apps` \
-├─  └─── `Repositories` \
-├─  └──────── `Company` \
-├─  └────────── `ApplyRepository.php` \
-├─  └─── `Interface` \
-├─  └──────── `Company` \
-├─  └──────────  `ApplyInterface.php` \
+├─  └─ `Repositories` \
+├─  └─────`Company` \
+├─  └─────── `ApplyRepository.php` \
+├─  └─ `Interface` \
+├─  └─────`Company` \
+├─  └─────── `ApplyInterface.php` \
 ├─  `bootstrap` \
 ├─  `config` \
 ├─  `database` \
