@@ -15,13 +15,14 @@ $ php artisan make:interface Company/Apply
 $ php artisan make:repository Company/Apply
 
 ```
+
 ┌── `apps` \
 │   ├── `Repositories` \
-|       ├── `Company` \
-|           ├── `ApplyRepository` \
+|   |   ├── `Company` \
+|   |   |   └── `ApplyRepository` \
 │   └── `Interface` \
-        ├── `Company` \
-            ├── `ApplyInterface` \
+|       ├── `Company` \
+|       |   └── `ApplyInterface` \
 ├─  `bootstrap` \
 ├─  `config` \
 ├─  `database` \
