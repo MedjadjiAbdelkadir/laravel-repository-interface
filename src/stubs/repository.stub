@@ -1,0 +1,98 @@
+<?php
+
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Exception;
+use DB;
+class $CLASSNAME$Repository implements $CLASSNAME$Interface{
+
+    public function index(){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+
+    public function create(){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+
+    public function store($request){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+    public function show($id){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (ModelNotFoundException $e) {
+            DB::rollback();
+            throw new Exception('$CLASSNAME$ Not Found', 404);
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+
+    public function edit($id){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (ModelNotFoundException $e) {
+            DB::rollback();
+            throw new Exception('$CLASSNAME$ Not Found', 404);
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+
+    public function update($request, $id){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (ModelNotFoundException $e) {
+            DB::rollback();
+            throw new Exception('$CLASSNAME$ Not Found', 404);
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+
+    public function destroy($id){
+        try {
+            DB::beginTransaction();
+            // Code
+            DB::commit();
+        }catch (ModelNotFoundException $e) {
+            DB::rollback();
+            throw new Exception('$CLASSNAME$ Not Found', 404);
+        }catch (Exception $e) {
+            DB::rollback();
+            throw new Exception('Internal Server Error');
+        }
+    }
+}
