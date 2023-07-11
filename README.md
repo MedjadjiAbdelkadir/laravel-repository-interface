@@ -20,9 +20,9 @@ $ php artisan make:repository Company/Apply
 ├─  └── `Repositories` \
 ├─      └── `Company` \
 ├─          └── `ApplyRepository` \
-  └── `Interface` \
-├─    └── `Company` \
-├─        └── `ApplyInterface` \
+├─  └── `Interface` \
+├─      └── `Company` \
+├─          └── `ApplyInterface` \
 ├─  `bootstrap` \
 ├─  `config` \
 ├─  `database` \
