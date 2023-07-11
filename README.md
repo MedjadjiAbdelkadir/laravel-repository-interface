@@ -19,10 +19,10 @@ $ php artisan make:repository Company/Apply
 
 ┌── `apps` \
 ├─  └─ `Repositories` \
-├─  └─────`Company` \
+├─  └──── `Company` \
 ├─  └─────── `ApplyRepository.php` \
 ├─  └─ `Interface` \
-├─  └─────`Company` \
+├─  └──── `Company` \
 ├─  └─────── `ApplyInterface.php` \
 ├─  `bootstrap` \
 ├─  `config` \
