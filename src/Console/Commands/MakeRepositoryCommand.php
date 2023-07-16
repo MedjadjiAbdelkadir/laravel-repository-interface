@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use Illuminate\Support\Pluralizer;
 use Illuminate\Filesystem\Filesystem;
-use Medjadji\LaravelRepositoryInterface\CreateFile;
+use Medjadji\LaravelRepositoryInterface\Files\CreateRepository;
 
 class MakeRepositoryCommand extends Command
 {
@@ -34,12 +34,15 @@ class MakeRepositoryCommand extends Command
         $_path = str_replace("/","\\",implode("/", $_folders));
         $model = ucwords(Pluralizer::singular($folders[$file_index]));
 
-        // 'App\\Repositories\\'.
-  
-        $namespace_repository = 'App\\Repositories\\' .$_path;
+        if($_path == ""){
+            $namespace_repository = 'App\\Repositories' .$_path;
+        }else{
+            $namespace_repository = 'App\\Repositories\\' .$_path;
+        }
+
         $path_repository = base_path($namespace_repository) . '\\' . $model.'Repository.php';
 
-        $message_repository = CreateFile::of('Repository',$this->files,'repository.stub',$model,$namespace_repository,$path_repository);
+        $message_repository = CreateRepository::of($this->files,'repository.stub',$model,$namespace_repository,$path_repository);
 
         if($message_repository == true){
             $this->info("Repository created successfully.");

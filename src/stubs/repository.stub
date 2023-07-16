@@ -6,7 +6,7 @@ namespace $NAMESPACE$;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Exception;
 use DB;
-class $CLASSNAME$Repository implements $CLASSNAME$Interface{
+class $CLASSNAME$Repository{
 
     public function index(){
         try {

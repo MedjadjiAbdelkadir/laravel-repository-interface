@@ -2,11 +2,12 @@
     "name": "medjadji/laravel-repository-interface",
     "description": "This package is intended to create a Command to create a repository and an Interface at the same time",
     "license": "MIT",
-    "keywords": ["laravel","package","repository","interface", "laravel-repository-interface" ,"command"],
+    "keywords": ["laravel","package","repository","interface", "laravel repository with interface" ,"command"],
     "authors": [
         {
             "name": "MedjadjiAbdelkadir",
-            "email": "medjadjiabdelkadir22@gmail.com"
+            "email": "medjadjiabdelkadir22@gmail.com",
+            "role" : "developer"
         }
     ],
     "require": {
@@ -22,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Medjadji\\LaravelRepositoryInterface\\RepositoryInterfaceServiceProvider"
+                "Medjadji\\LaravelRepositoryInterface\\Provider\\RepositoryInterfaceServiceProvider"
             ],
             "aliases": {
                 "LaravelRepositoryInterface": "Medjadji\\LaravelRepositoryInterface\\LaravelRepositoryInterface"
